@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User registration form</h2>
+        <form action="process.php" method="POST">
+            <label for="name">The Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">The Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="password"> The Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+            <br><br>
+
+            <label for="phone"> Phone Number:</label>
+            <input type="text" id="phone" name="phone" pattern="[0-9]{9}" title="Should be 9 digits">
+            <br><br>
+
+            <label for="gender"> The Gender:</label>
+            <select name="gender" id="gender">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Rigester</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تم التسجيل بنجاح</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>تهانينا!</h2>
+        <p>لقد تم تسجيلك بنجاح.</p>
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </div>
+</body>
+
+</html> -->
